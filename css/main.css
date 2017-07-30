@@ -1,0 +1,60 @@
+.headerLink, .headerLink:active, .headerLink:visited, .headerLink:hover{
+  color: #333;
+}
+
+.header {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Oxygen Mono', monospace;
+}
+
+.header p{
+  text-align: right;
+  padding: 10px 20px 10px 10px;
+}
+
+.aboutSec{
+  height: 100vh;
+}
+
+.aboutSec{
+  height: 100vh;
+}
+
+.about{
+  font-family: 'Fira Mono', monospace;
+}
+
+.about p{
+  font-size: 120px;
+  letter-spacing: -8px;
+}
+
+#b{
+  color: #ff9900;
+}
+
+#aboutText{
+  font-size: 12px;
+  line-height: 0.7;
+}
+
+.aboutDesc{
+  font-family: 'Fira Mono', monospace;
+}
+
+.aboutDesc p{
+  font-size: 20px;
+  /*letter-spacing: -4px;*/
+}
+
+.footer {
+  background-color: #333;
+  color: #ff9900;
+  font-family: 'Oxygen Mono', monospace;
+}
+
+.footer p{
+  text-align: right;
+  padding: 10px 20px 10px 10px;
+}
