@@ -8,10 +8,6 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>bflo 1.0</title>
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Main css-->
-  <link href="css/main.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -19,60 +15,124 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Main css-->
+  <link href="css/main.css" rel="stylesheet">
+
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 </head>
 
 <body>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
   <div class="container">
-    <div class="row header">
-      <p>
-        <a href="#" class="headerLink">about</a>
-        <a href="#" class="headerLink">work</a>
-        <a href="#" class="headerLink">contact</a>
-      </p>
-    </div>
-    <section class="aboutSec">
-      <div class="row about">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 text-right">
-          <p><span id="b">b</span>flo</p>
-        </div>
-        <div class="col-sm-2"></div>
+
+    <div class="section">
+      <div class="row header topNav">
+        <p>
+          <a href="javascript:goAbout();" class="headerLink">about</a>
+          <a href="javascript:goWork();" class="headerLink">work</a>
+          <a href="javascript:goContact();" class="headerLink">contact</a>
+        </p>
       </div>
-      <div class="row aboutDesc">
-        <div class="col-sm-6 text-right">
-          <br/>
-          <p>Lorem,</p>
-          <p>Ipsumsdda,</p>
-          <p>Dolorus</p>
-          <p id="aboutText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-          <p id="aboutText"> eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p id="aboutText">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <section class="aboutSec">
+        <div class="row about">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 text-right">
+            <p><span id="b">b</span>flo</p>
+          </div>
+          <div class="col-sm-2"></div>
         </div>
-        <div class="col-sm-6 text-left">
-          <img src="http://i.imgur.com/Al4rGjA.png" class="img-thumbnail" alt="IZZA ME" height="380" width="260">
+        <div class="row aboutDesc">
+          <div class="col-sm-6 text-right">
+            <br/>
+            <p>Lorem,</p>
+            <p>Ipsumsdda,</p>
+            <p>Dolorus</p>
+            <p id="aboutText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+            <p id="aboutText"> eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p id="aboutText">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          </div>
+          <div class="col-sm-6 text-left">
+            <img src="http://i.imgur.com/Al4rGjA.png" class="img-thumbnail" alt="IZZA ME" height="380" width="260">
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="rowSec">
-      <div class="row work">
-      </div>
-    </section>
-    <div class="row contact">
+      </section>
     </div>
-    <div class="row footer">
-      <p>2017, Bon Flores</p>
+    <div class="section">
+      <section class="rowSec">
+        <div class="row work">
+          <div class="col-md-6 text-center img-card">
+            <a href="#">
+              <img src="http://i.imgur.com/BEhJ6Rm.png" alt="dream catcher">
+            </a>
+          </div>
+          <div class="col-md-6 text-center img-card">
+            <a href="#">
+              <img src="http://i.imgur.com/dLPcsil.png" alt="BoA">
+            </a>
+          </div>
+          <div class="col-md-6 text-center img-card">
+            <a href="#">
+              <img src="http://i.imgur.com/uJ1TZbm.png" alt="danny">
+            </a>
+          </div>
+          <div class="col-md-6 text-center img-card">
+            <a href="#">
+              <img src="http://i.imgur.com/HQ7Lxmb.png" alt="street">
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
+    <div class="section">
+      <section class="contactSec">
+        </br>
+        </br>
+        </br>
+        <div class="row contact">
+          <div class="col-sm-6">
+            <form>
+              <div class="form-group">
+                <!-- Name -->
+                <input class="form-control" id="name" name="name" type="text" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <!-- Email -->
+                <input class="form-control" id="email" name="email" type="text" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <!-- Message -->
+                <textarea class="form-control" cols="40" id="message" name="message" rows="10" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-6">
+            </br>
+            <p id="contactText">Want to get in touch?</p>
+            </br>
+            <p id="contactText">Hit me up.</p>
+            </br>
+            <p id="contactText">I promise to reply ASAP :)</p>
+          </div>
+        </div>
+        <div class="row footer">
+          <p>2017, Bon Flores</p>
+        </div>
+      </section>
+    </div>
+
   </div>
-
-
 
 </body>
 

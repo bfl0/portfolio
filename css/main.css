@@ -1,3 +1,13 @@
+
+.topNav {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 60%; /* Full width */
+    z-index: 1;
+}
+
+
 .headerLink, .headerLink:active, .headerLink:visited, .headerLink:hover{
   color: #333;
 }
@@ -10,14 +20,19 @@
 
 .header p{
   text-align: right;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 20px 0px 10px;
 }
 
 .aboutSec{
+  margin-top: 30px;
   height: 100vh;
 }
 
-.aboutSec{
+.rowSec{
+  height: 100vh;
+}
+
+.contactSec{
   height: 100vh;
 }
 
@@ -45,7 +60,11 @@
 
 .aboutDesc p{
   font-size: 20px;
-  /*letter-spacing: -4px;*/
+}
+
+#contactText{
+  font-family: 'Fira Mono', monospace;
+  font-size: 20px;
 }
 
 .footer {
@@ -57,4 +76,13 @@
 .footer p{
   text-align: right;
   padding: 10px 20px 10px 10px;
+}
+
+.img-card {
+  padding: 10px 50px 10px 10px;
+}
+
+.contact{
+  font-family: 'Fira Mono', monospace;
+  font-size: 16px;
 }
