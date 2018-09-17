@@ -1,6 +1,4 @@
-# portfolio
-
-portfolio sandbox for freecodecamp
+# A Portfolio "Sandbox" for Freecodecamp training.
 
 ##imgAlbum 
 
